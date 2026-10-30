@@ -1,5 +1,9 @@
 /* =====================================================================
+<<<<<<< HEAD
    Stockwise — a mini-store look: paper receipts, price tags, shelf meters.
+=======
+   YouthCo. Shop — a mini-store look: paper receipts, price tags, shelf meters.
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
    One accent color (--accent) drives everything; users change it with the color wheel.
    ===================================================================== */
 :root{
@@ -166,8 +170,11 @@ tr[data-search]:not([hidden]){animation:rowIn .3s var(--ease) both}
 .flash.out{opacity:0;transform:translateY(-10px)}
 .flash-success{background:var(--good-bg);color:var(--good-fg);border:1px solid color-mix(in srgb,var(--good) 35%,transparent)}
 .flash-error{background:var(--bad-bg);color:var(--bad-fg);border:1px solid color-mix(in srgb,var(--bad) 35%,transparent)}
+<<<<<<< HEAD
 .disclaimer{margin-top:18px;padding:12px 14px;background:#fef7d6;border:1px solid #f1e3a1;border-radius:12px;color:#2a2a24;font-size:12.5px;line-height:1.55}
 .disclaimer strong{font-weight:700}
+=======
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 .auth-right .flash{position:static;box-shadow:none;max-width:none;margin-bottom:14px}
 .notice{background:var(--warn-bg);color:var(--warn-fg);border-radius:var(--r-md);padding:12px 16px;margin-bottom:20px}
 
@@ -248,6 +255,10 @@ dialog h3{font-size:21px;margin-bottom:4px}
 
 /* ---------- login / register (always fits one screen, no scrolling) ---------- */
 .auth-body{height:100vh;height:100dvh;display:grid;place-items:center;background:var(--bg);padding:clamp(10px,3vh,32px) clamp(10px,3vw,32px);position:relative;overflow:auto}
+<<<<<<< HEAD
+=======
+.auth-tools{position:absolute;top:14px;right:14px;display:flex;gap:8px;z-index:5}
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 .auth-card{display:flex;width:min(940px,100%);max-height:100%;background:var(--surface);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.3);animation:pageIn .6s var(--ease) both}
 .auth-left{flex:1 1 44%;background:color-mix(in srgb,var(--accent) 50%,#07110c);color:rgba(255,255,255,.86);padding:clamp(22px,5vh,40px) clamp(24px,3.4vw,38px);display:flex;flex-direction:column;position:relative;overflow:hidden}
 .auth-left::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;right:-150px;bottom:-150px;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 70%,#fff) 0%,transparent 65%);opacity:.28;pointer-events:none}
@@ -371,7 +382,11 @@ kbd{font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);bor
   table.responsive td.actions::before{content:none}
   table.responsive td:empty{display:none}
   /* auth: slim brand bar on top, form fills the rest of the screen */
+<<<<<<< HEAD
   .auth-body{padding-top:clamp(10px,3vh,32px);align-items:start}
+=======
+  .auth-body{padding-top:64px;align-items:start}
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
   .auth-card{flex-direction:column;border-radius:22px;max-height:calc(100dvh - 76px)}
   .auth-left{flex:none;padding:14px 18px}.auth-left::after{display:none}
   .auth-left h1,.auth-left p,.receipt-mock{display:none}
@@ -379,6 +394,10 @@ kbd{font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);bor
   .auth-right{padding:18px 18px 20px;justify-content:flex-start}
   .auth-right h2{font-size:24px}
   .fgrid.fg3{grid-template-columns:1fr 1fr}.fgrid.fg3 .fg-mid{grid-column:1/-1}
+<<<<<<< HEAD
+=======
+  .auth-tools{position:fixed;top:12px;right:12px}
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 }
 @media(max-width:400px){.ledger[style*="--cols:4"]{grid-template-columns:1fr}}
 

@@ -7,6 +7,10 @@
       <input type="color" id="accent-input" value="#1f7a4d" aria-label="Custom color">
     </label>
     <div class="mode-row">
+<<<<<<< HEAD
+=======
+      <button type="button" class="btn btn-sm theme-toggle-text">Switch light / dark</button>
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
       <button type="button" class="btn btn-sm" id="accent-reset">Reset color</button>
     </div>
     <p class="muted">Saved on this device.</p>

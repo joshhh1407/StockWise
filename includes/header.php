@@ -33,7 +33,11 @@ $hideSearch = $hideSearch ?? false;
 <div class="app">
   <aside class="sidebar" id="sidebar">
     <div>
+<<<<<<< HEAD
       <a class="brand" href="index.php"><span class="logo"><?= icon('tag') ?></span><span><strong>Stockwise</strong></span></a>
+=======
+      <a class="brand" href="index.php"><span class="logo"><?= icon('tag') ?></span><span><strong>YouthCo.</strong><small>Shop</small></span></a>
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
       <nav aria-label="Main">
         <?php foreach ($nav as $file => [$label, $ico]): ?>
           <a href="<?= $file ?>" class="<?= $active === $file ? 'active' : '' ?>"><?= icon($ico) ?><span><?= $label ?></span></a>

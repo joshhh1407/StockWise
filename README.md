@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stockwise — AI Inventory Management System (PHP + MySQL)
 
 ## Setup (XAMPP)
@@ -9,6 +10,19 @@
 
 **Already imported the OLD database.sql?** Either drop `stockwise_db` and import the new `database.sql` (clean start),
 or open `http://localhost/Stockwise/upgrade.php` once (keeps your data; add `?user=yourusername` to choose which account keeps the old products). Then delete `upgrade.php`.
+=======
+# YouthCo. Shop — AI Inventory Management System (PHP + MySQL)
+
+## Setup (XAMPP)
+1. Copy this folder to `C:\xampp\htdocs\YouthCo`.
+2. Start **Apache** and **MySQL** in XAMPP.
+3. phpMyAdmin -> **Import** -> choose `database.sql` (creates `youthco_db` with all tables).
+4. Open `http://localhost/YouthCo/seed_demo.php` once -> demo account `admin` / `admin123` with sample products and 30 days of sales. Then delete `seed_demo.php`.
+5. Copy `.env.example` to `.env` in the project root, then set your database credentials and `GEMINI_API_KEY` there. Open `http://localhost/YouthCo/` and log in.
+
+**Already imported the OLD database.sql?** Either drop `youthco_db` and import the new `database.sql` (clean start),
+or open `http://localhost/YouthCo/upgrade.php` once (keeps your data; add `?user=yourusername` to choose which account keeps the old products). Then delete `upgrade.php`.
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 
 ## One shared inventory
 Products, stock, sales, reports and AI results are stored in the database and shared by every account. A product added (or restocked / sold) while logged in as one account is saved and visible after logging in as any other account. `owner_id` only records who created the product.

@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 -- Stockwise | AI Inventory Management System
 -- Import this in phpMyAdmin (Import tab). Follows the ERD.
 CREATE DATABASE IF NOT EXISTS stockwise_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE stockwise_db;
+=======
+-- YouthCo. Shop | AI Inventory Management System
+-- Import this in phpMyAdmin (Import tab). Follows the ERD.
+CREATE DATABASE IF NOT EXISTS youthco_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE youthco_db;
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 
 CREATE TABLE IF NOT EXISTS roles (
   role_id   INT AUTO_INCREMENT PRIMARY KEY,
@@ -97,10 +104,14 @@ CREATE TABLE IF NOT EXISTS ai_recommendations (
   FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
+<<<<<<< HEAD
 -- if the database was imported before, rename the old roles in place first
 UPDATE roles SET role_name='Client' WHERE role_name='Administrator';
 UPDATE roles SET role_name='User' WHERE role_name='Staff';
 INSERT IGNORE INTO roles (role_name) VALUES ('Client'), ('User');
+=======
+INSERT IGNORE INTO roles (role_name) VALUES ('Administrator'), ('Staff');
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 INSERT IGNORE INTO categories (category_name) VALUES
  ('Beverages'),('Instant Noodles'),('Snacks'),('Canned Goods'),
  ('Coffee'),('Milk'),('Personal Care'),('Baby Products');

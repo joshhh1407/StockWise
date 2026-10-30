@@ -1,6 +1,10 @@
 <?php
 // Load local credentials without overriding environment variables configured by Apache.
+<<<<<<< HEAD
 $envFile = is_file(__DIR__ . '/../.env') ? __DIR__ . '/../.env' : __DIR__ . '/../env';   // the file may be saved as .env or env
+=======
+$envFile = __DIR__ . '/../.env';
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 if (is_file($envFile)) {
     $lines = file($envFile, FILE_IGNORE_NEW_LINES);
     if ($lines === false) {
@@ -30,11 +34,19 @@ function config_env(string $name, string $default): string {
 
 // ===== DATABASE =====
 define('DB_HOST', config_env('DB_HOST', 'localhost'));
+<<<<<<< HEAD
 define('DB_NAME', config_env('DB_NAME', 'stockwise_db'));
 define('DB_USER', config_env('DB_USER', 'root'));
 define('DB_PASS', config_env('DB_PASS', ''));
 
 define('STORE_NAME', 'Stockwise');
+=======
+define('DB_NAME', config_env('DB_NAME', 'youthco_db'));
+define('DB_USER', config_env('DB_USER', 'root'));
+define('DB_PASS', config_env('DB_PASS', ''));
+
+define('STORE_NAME', 'YouthCo. Shop');
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 date_default_timezone_set('Asia/Manila');
 
 // ===== AI SETTINGS (Google Gemini) =====
@@ -47,6 +59,7 @@ define('AI_PROFILE', 'gemini');
 $AI_PROFILES = [
     'gemini' => [
         'url'   => 'https://generativelanguage.googleapis.com/v1beta/openai/',
+<<<<<<< HEAD
         'model' => config_env('GEMINI_MODEL', 'gemini-3.8-flash'),
         'key'   => config_env('GEMINI_API_KEY', ''),
     ],
@@ -54,11 +67,18 @@ $AI_PROFILES = [
     'gemini_lite' => [
         'url'   => 'https://generativelanguage.googleapis.com/v1beta/openai/',
         'model' => config_env('GEMINI_FALLBACK_MODEL', 'gemini-3.5-flash-lite'),
+=======
+        'model' => 'gemini-3.8-flash',
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
         'key'   => config_env('GEMINI_API_KEY', ''),
     ],
 ];
 define('AI_PROFILES_ALL', $AI_PROFILES);
+<<<<<<< HEAD
 define('AI_CHAIN', ['gemini', 'gemini_lite']);   // AIs to try, in order (then the built-in engine)
+=======
+define('AI_CHAIN', ['gemini']);                  // AIs to try, in order (then the built-in engine)
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 
 define('AI_BASE_URL', $AI_PROFILES[AI_PROFILE]['url']);
 define('AI_MODEL',    $AI_PROFILES[AI_PROFILE]['model']);

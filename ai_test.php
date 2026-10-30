@@ -2,9 +2,13 @@
 // TEST ONLY - delete this file after checking the AI connection.
 set_time_limit(120);
 require_once __DIR__ . '/config/config.php';
+<<<<<<< HEAD
 // usage: ai_test.php  (main model)  |  ai_test.php?profile=gemini_lite  (backup model)
 $name = $_GET['profile'] ?? AI_PROFILE;
 $P = AI_PROFILES_ALL[$name] ?? die('Unknown profile. Use: ' . implode(', ', array_keys(AI_PROFILES_ALL)));
+=======
+$P = AI_PROFILES_ALL[AI_PROFILE];
+>>>>>>> 8d01c4576897e530dadbc1ece83b3a55659c1a50
 $start = microtime(true);
 $ch = curl_init(rtrim($P['url'], '/') . '/chat/completions');
 curl_setopt_array($ch, [
