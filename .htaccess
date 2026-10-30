@@ -1,0 +1,4 @@
+# keep the secrets file (API key) from being opened in the browser
+<FilesMatch "^\.?env$">
+    Require all denied
+</FilesMatch>
