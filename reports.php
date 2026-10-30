@@ -57,7 +57,7 @@ if ($type && isset($_GET['csv'])) {
     [$head, $rows] = report_data($type, $from, $to);
     log_report($type, $from, $to, 'csv');
     header('Content-Type: text/csv; charset=utf-8');
-    header('Content-Disposition: attachment; filename="youthco_' . $type . '_' . date('Ymd') . '.csv"');
+    header('Content-Disposition: attachment; filename="stockwise_' . $type . '_' . date('Ymd') . '.csv"');
     $out = fopen('php://output', 'w'); fwrite($out, "\xEF\xBB\xBF");
     fputcsv($out, $head); foreach ($rows as $r) fputcsv($out, $r); fclose($out); exit;
 }

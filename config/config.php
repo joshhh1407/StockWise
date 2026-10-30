@@ -30,11 +30,11 @@ function config_env(string $name, string $default): string {
 
 // ===== DATABASE =====
 define('DB_HOST', config_env('DB_HOST', 'localhost'));
-define('DB_NAME', config_env('DB_NAME', 'youthco_db'));
+define('DB_NAME', config_env('DB_NAME', 'stockwise_db'));
 define('DB_USER', config_env('DB_USER', 'root'));
 define('DB_PASS', config_env('DB_PASS', ''));
 
-define('STORE_NAME', 'YouthCo. Shop');
+define('STORE_NAME', 'Stockwise');
 date_default_timezone_set('Asia/Manila');
 
 // ===== AI SETTINGS (Google Gemini) =====

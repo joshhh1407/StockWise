@@ -1,5 +1,5 @@
 DB_HOST=localhost
-DB_NAME=youthco_db
+DB_NAME=stockwise_db
 DB_USER=root
 DB_PASS=
 GEMINI_API_KEY=AQ.Ab8RN6JXMcPcAB5CIoVRZEkKxwDfI6UTzltMbp6gGcI9Jv60Ww

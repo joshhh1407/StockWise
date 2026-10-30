@@ -1,6 +1,6 @@
 <?php
 /**
- * AI engine for YouthCo. Shop
+ * AI engine for Stockwise
  * 1) Built-in analytics engine (pure PHP, no internet, no limit)
  * 2) Google Gemini (through its OpenAI-compatible endpoint) for the chat
  */

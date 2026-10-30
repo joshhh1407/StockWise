@@ -1,6 +1,6 @@
 <?php
 /**
- * Run ONCE in the browser: http://localhost/YouthCo/seed_demo.php
+ * Run ONCE in the browser: http://localhost/Stockwise/seed_demo.php
  * Creates the demo admin account (admin / admin123) with sample products and 30 days of sales.
  * (Any other account can load the same sample data with the button on its Dashboard / Inventory page.)
  * Delete this file when you're done.

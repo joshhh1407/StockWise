@@ -32,4 +32,5 @@ require __DIR__ . '/includes/auth_layout_top.php';
   <button class="btn btn-primary btn-block" type="submit">Log in</button>
 </form>
 <p class="alt">Don't have an account? <a href="register.php">Register here</a></p>
+<div class="disclaimer" role="note"><strong>Disclaimer:</strong> This website is created for demonstration and academic purposes only as part of an SIA subject project. It is not a real company, official service, registered business, or commercial website. No claims are made regarding actual business operations, legal standing, or real-world services.</div>
 <?php require __DIR__ . '/includes/auth_layout_bottom.php'; ?>
