@@ -399,3 +399,15 @@ label.agree input{width:18px;min-height:0;height:18px;margin-top:2px;flex:none;a
 label.agree a{color:var(--primary-ink);font-weight:700;border-bottom:1px solid currentColor}
 .terms-body{max-height:min(55vh,380px);overflow:auto;margin-top:12px;padding-right:6px;font-size:14px;line-height:1.55;color:var(--muted)}
 .terms-body p{margin:0 0 10px}.terms-body b{color:var(--ink)}
+
+/* theme color popup: keep it on screen on phones */
+@media(max-width:700px){
+  .palette-pop{
+    position:fixed;
+    left:12px;right:12px;
+    top:auto;bottom:96px;
+    width:auto;max-width:340px;
+    margin:0 auto;
+    transform-origin:bottom center;
+  }
+}
