@@ -21,4 +21,4 @@ jobs:
           REMOTE_PORT: ${{ secrets.SSH_PORT }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
           ARGS: "-avzr --delete"
-          EXCLUDE: "/.git/, /.github/, /.gitignore, /.env"
+          EXCLUDE: "/.git/, /.github/, /.gitignore, /.env, /env, /database.sql, /.cpanel.yml, /*.example, /README.md"
