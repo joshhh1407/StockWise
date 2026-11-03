@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/stocrmlq/public_html/
+    - /bin/cp -R assets config includes *.php $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
