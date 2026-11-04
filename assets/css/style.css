@@ -428,3 +428,9 @@ label.agree a{color:var(--primary-ink);font-weight:700;border-bottom:1px solid c
 .auth-right{justify-content:flex-start}
 .auth-right>:first-child{margin-top:auto}
 .auth-right>:last-child{margin-bottom:auto}
+
+@media(max-width:900px){
+  .sidebar{height:auto;padding-bottom:calc(22px + env(safe-area-inset-bottom))}
+  .bottom-nav a::before{display:none}
+  .bottom-nav a:hover{transform:none}
+}

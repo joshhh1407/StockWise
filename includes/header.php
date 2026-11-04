@@ -25,7 +25,7 @@ $hideSearch = $hideSearch ?? false;
 <title><?= e($pageTitle) ?> | <?= e(STORE_NAME) ?></title>
 <?php include __DIR__ . '/theme_boot.php'; ?>
 <?php include __DIR__ . '/fonts.php'; ?>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
 <?php include __DIR__ . '/icons.php'; ?>
