@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#1f7a4d">
 <title><?= $mode === 'login' ? 'Log in' : 'Create account' ?> | <?= e(STORE_NAME) ?></title>
 <?php include __DIR__ . '/fonts.php'; ?>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body class="auth-body">
 <?php include __DIR__ . '/icons.php'; ?>

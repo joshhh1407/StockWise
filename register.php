@@ -64,7 +64,6 @@ require __DIR__ . '/includes/auth_layout_top.php';
     <p><b>8. Suspension.</b> Accounts that break these terms may be suspended or removed.</p>
     <p><b>9. Changes.</b> These terms may be updated. Continued use of the system means you accept the updated terms.</p>
   </div>
-  <div class="disclaimer" role="note"><strong>Disclaimer:</strong> This website is created for demonstration and academic purposes only as part of an SIA subject project. It is not a real company, official service, registered business, or commercial website. No claims are made regarding actual business operations, legal standing, or real-world services.</div>
   <div class="dlg-actions">
     <button type="button" class="btn" data-close>Close</button>
     <button type="button" class="btn btn-primary" id="terms-accept">I agree</button>
